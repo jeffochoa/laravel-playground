@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a0a797f669690e3aa230f1a462dbf8f",
+    "content-hash": "85506f9450b93b163cd44010fcc255a6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -882,6 +882,65 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.7.0"
             },
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "jessarcher/laravel-castable-data-transfer-object",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jessarcher/laravel-castable-data-transfer-object.git",
+                "reference": "02b492a28a3fcc7293d089cc001d9213aa46296c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jessarcher/laravel-castable-data-transfer-object/zipball/02b492a28a3fcc7293d089cc001d9213aa46296c",
+                "reference": "02b492a28a3fcc7293d089cc001d9213aa46296c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0",
+                "php": "^7.4",
+                "spatie/data-transfer-object": "^2.5.0",
+                "thecodingmachine/safe": "^1.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JessArcher\\CastableDataTransferObject\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jess Archer",
+                    "email": "jess@jessarcher.com",
+                    "homepage": "https://jessarcher.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Automatically cast JSON columns to rich PHP objects in Laravel using Spatie's data-transfer-object class",
+            "homepage": "https://github.com/jessarcher/laravel-castable-data-transfer-object",
+            "keywords": [
+                "castable-data-transfer-object",
+                "castable-value-object",
+                "data-transfer-object",
+                "jessarcher",
+                "laravel-castable-data-transfer-object",
+                "laravel-castable-value-object",
+                "value-object"
+            ],
+            "support": {
+                "issues": "https://github.com/jessarcher/laravel-castable-data-transfer-object/issues",
+                "source": "https://github.com/jessarcher/laravel-castable-data-transfer-object/tree/v0.0.2"
+            },
+            "time": "2020-10-23T11:57:51+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2342,18 +2401,73 @@
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
-            "name": "styde/enlighten",
-            "version": "dev-main",
+            "name": "spatie/data-transfer-object",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/StydeNet/enlighten.git",
-                "reference": "51790f70a225e1aa26fd05aee1da15988e85dfe1"
+                "url": "https://github.com/spatie/data-transfer-object.git",
+                "reference": "e326e10c8fd694db9b0c584c4986370beb9fd3ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StydeNet/enlighten/zipball/51790f70a225e1aa26fd05aee1da15988e85dfe1",
-                "reference": "51790f70a225e1aa26fd05aee1da15988e85dfe1",
+                "url": "https://api.github.com/repos/spatie/data-transfer-object/zipball/e326e10c8fd694db9b0c584c4986370beb9fd3ce",
+                "reference": "e326e10c8fd694db9b0c584c4986370beb9fd3ce",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "suggest": {
+                "phpstan/phpstan": "Take advantage of checkUninitializedProperties with \\Spatie\\DataTransferObject\\PHPstan\\PropertiesAreAlwaysInitializedExtension"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DataTransferObject\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Roose",
+                    "email": "brent@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data transfer objects with batteries included",
+            "homepage": "https://github.com/spatie/data-transfer-object",
+            "keywords": [
+                "data-transfer-object",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/data-transfer-object/issues",
+                "source": "https://github.com/spatie/data-transfer-object/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/spatie",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-08-28T09:26:20+00:00"
+        },
+        {
+            "name": "styde/enlighten",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./../enlighten",
+                "reference": "c9eef9713768b16b395451c60d79e8b8c0b8616a"
             },
             "require": {
                 "ext-json": "*",
@@ -2366,7 +2480,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "^9.3"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2383,7 +2496,19 @@
                     "Styde\\Enlighten\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -2398,21 +2523,9 @@
                 }
             ],
             "description": "Enlighten your APIs with auto-generated documentation",
-            "support": {
-                "issues": "https://github.com/StydeNet/enlighten/issues",
-                "source": "https://github.com/StydeNet/enlighten/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sileence",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/duiliopalacios",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-11-08T12:36:26+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4634,6 +4747,145 @@
                 }
             ],
             "time": "2020-10-27T10:11:13+00:00"
+        },
+        {
+            "name": "thecodingmachine/safe",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/safe.git",
+                "reference": "a8ab0876305a4cdaef31b2350fcb9811b5608dbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/a8ab0876305a4cdaef31b2350fcb9811b5608dbc",
+                "reference": "a8ab0876305a4cdaef31b2350fcb9811b5608dbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12",
+                "squizlabs/php_codesniffer": "^3.2",
+                "thecodingmachine/phpstan-strict-rules": "^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Safe\\": [
+                        "lib/",
+                        "deprecated/",
+                        "generated/"
+                    ]
+                },
+                "files": [
+                    "deprecated/apc.php",
+                    "deprecated/libevent.php",
+                    "deprecated/mssql.php",
+                    "deprecated/stats.php",
+                    "lib/special_cases.php",
+                    "generated/apache.php",
+                    "generated/apcu.php",
+                    "generated/array.php",
+                    "generated/bzip2.php",
+                    "generated/calendar.php",
+                    "generated/classobj.php",
+                    "generated/com.php",
+                    "generated/cubrid.php",
+                    "generated/curl.php",
+                    "generated/datetime.php",
+                    "generated/dir.php",
+                    "generated/eio.php",
+                    "generated/errorfunc.php",
+                    "generated/exec.php",
+                    "generated/fileinfo.php",
+                    "generated/filesystem.php",
+                    "generated/filter.php",
+                    "generated/fpm.php",
+                    "generated/ftp.php",
+                    "generated/funchand.php",
+                    "generated/gmp.php",
+                    "generated/gnupg.php",
+                    "generated/hash.php",
+                    "generated/ibase.php",
+                    "generated/ibmDb2.php",
+                    "generated/iconv.php",
+                    "generated/image.php",
+                    "generated/imap.php",
+                    "generated/info.php",
+                    "generated/ingres-ii.php",
+                    "generated/inotify.php",
+                    "generated/json.php",
+                    "generated/ldap.php",
+                    "generated/libxml.php",
+                    "generated/lzf.php",
+                    "generated/mailparse.php",
+                    "generated/mbstring.php",
+                    "generated/misc.php",
+                    "generated/msql.php",
+                    "generated/mysql.php",
+                    "generated/mysqli.php",
+                    "generated/mysqlndMs.php",
+                    "generated/mysqlndQc.php",
+                    "generated/network.php",
+                    "generated/oci8.php",
+                    "generated/opcache.php",
+                    "generated/openssl.php",
+                    "generated/outcontrol.php",
+                    "generated/password.php",
+                    "generated/pcntl.php",
+                    "generated/pcre.php",
+                    "generated/pdf.php",
+                    "generated/pgsql.php",
+                    "generated/posix.php",
+                    "generated/ps.php",
+                    "generated/pspell.php",
+                    "generated/readline.php",
+                    "generated/rpminfo.php",
+                    "generated/rrd.php",
+                    "generated/sem.php",
+                    "generated/session.php",
+                    "generated/shmop.php",
+                    "generated/simplexml.php",
+                    "generated/sockets.php",
+                    "generated/sodium.php",
+                    "generated/solr.php",
+                    "generated/spl.php",
+                    "generated/sqlsrv.php",
+                    "generated/ssdeep.php",
+                    "generated/ssh2.php",
+                    "generated/stream.php",
+                    "generated/strings.php",
+                    "generated/swoole.php",
+                    "generated/uodbc.php",
+                    "generated/uopz.php",
+                    "generated/url.php",
+                    "generated/var.php",
+                    "generated/xdiff.php",
+                    "generated/xml.php",
+                    "generated/xmlrpc.php",
+                    "generated/yaml.php",
+                    "generated/yaz.php",
+                    "generated/zip.php",
+                    "generated/zlib.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
+            "support": {
+                "issues": "https://github.com/thecodingmachine/safe/issues",
+                "source": "https://github.com/thecodingmachine/safe/tree/v1.3.3"
+            },
+            "time": "2020-10-28T17:51:34+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

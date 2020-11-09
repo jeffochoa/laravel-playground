@@ -12,9 +12,10 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jessarcher/laravel-castable-data-transfer-object": "^0.0.2",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "styde/enlighten": "main-dev"
+        "styde/enlighten": "dev-main"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
