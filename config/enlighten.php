@@ -12,7 +12,7 @@ return [
     // Default directory to export the documentation.
     'docs_base_dir' => 'docs',
     // Default base URL for the documentation.
-    'docs_base_url' => '/laravel-playground',
+    'docs_base_url' => 'laravel-playground',
 
     // Display/hide quick access links to open your IDE from the UI
     'developer_mode' => true,

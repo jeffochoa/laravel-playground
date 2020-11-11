@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85506f9450b93b163cd44010fcc255a6",
+    "content-hash": "4f4bea698677b389a03331408470d4eb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2463,11 +2463,17 @@
         },
         {
             "name": "styde/enlighten",
-            "version": "dev-main",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StydeNet/enlighten.git",
+                "reference": "5182975e6365590eeb3dbc3c86106503899d22ba"
+            },
             "dist": {
-                "type": "path",
-                "url": "./../enlighten",
-                "reference": "829c85be1c018227da87c4b210b63f083623549f"
+                "type": "zip",
+                "url": "https://api.github.com/repos/StydeNet/enlighten/zipball/5182975e6365590eeb3dbc3c86106503899d22ba",
+                "reference": "5182975e6365590eeb3dbc3c86106503899d22ba",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2496,19 +2502,7 @@
                     "Styde\\Enlighten\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "format": [
-                    "vendor/bin/php-cs-fixer fix --allow-risky=yes"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2523,9 +2517,21 @@
                 }
             ],
             "description": "Enlighten your APIs with auto-generated documentation",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/StydeNet/enlighten/issues",
+                "source": "https://github.com/StydeNet/enlighten/tree/dev"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sileence",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/duiliopalacios",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-11-11T11:09:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
